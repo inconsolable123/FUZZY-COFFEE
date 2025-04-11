@@ -1,2 +1,35 @@
 git이란?
-git은 
+git은 컴퓨터 파일의 변경사항을 추적하고 팀 간에 해당 파일 작업을 조율하기위한 대표적인 버전 관리시스템(VCS)
+
+1. git 세팅시 처음 한번 수행되어야하는 세팅
+
+  개정 문자(Newline)  설정
+  - macOs
+    경로> git config --global core.autocrif input
+  - windows
+    경로> git config --global core.autocrif true
+
+  사용자정보
+  거밋(버전 생성)을 위한 정보 등록
+    경로> git config --global user.name '니 이름'    
+    경로> git config --global user.email '니 메일'
+
+  구성확인
+    경로> git config --global --list
+
+2. git 설정
+    경로> git init : 현재 프로젝트에서 변경사항 추적(버전 관리)을 시작
+          (index,css,img 등 변경사항이 로컬(내 컴퓨터)에서 발생) 
+          - master 라는 브렌치 발생(프로젝트 시작)   
+          - 파일을 빨간색으로 나타남
+    경로> git add 변경파일명 : 변경사항을 추적할 파일이름 지정
+          - 특정파일 하나 올릴때:git add 특정파일명
+          - 전체 올릴때:git add.
+          - 파일을 초록색으로 변경
+          - 버전으로 만들준비(변경사항 추적중...) 
+    경로> git comit -m '변경내용이나 시작부분의 내용을 삽입'
+          - 메시지(-m) 함께 버전을 생성(-옵션->플래그라고함)
+          - 파일을 회색으로 나타남  
+          - 만약 파일이 새롭게 생성이된다면 : git comit -m 'main.js scroll 기능 변경'
+    경로> git remote add origin 깃 저장소 주소 : origin이라는 별칭으로 원격 저장소를 연결
+    경로> git push origin 브랜차이를(master 또는 main) : origin이란 별칭의 원격 저장소로 버전 내용 전송               
