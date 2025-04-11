@@ -32,4 +32,10 @@ git은 컴퓨터 파일의 변경사항을 추적하고 팀 간에 해당 파일
           - 파일을 회색으로 나타남  
           - 만약 파일이 새롭게 생성이된다면 : git comit -m 'main.js scroll 기능 변경'
     경로> git remote add origin 깃 저장소 주소 : origin이라는 별칭으로 원격 저장소를 연결
-    경로> git push origin 브랜차이를(master 또는 main) : origin이란 별칭의 원격 저장소로 버전 내용 전송               
+    경로> git push origin 브랜차이를(master 또는 main) : origin이란 별칭의 원격 저장소로 버전 내용 전송      
+
+3. branch
+    경로> git branch : 로컬에 만들어져있는 브렌치 확인
+    경로> git branch -a : 원격 저장소에 만들어져있는 브렌치 확인
+    경로> git branch 만들어야할 브렌치 이름 :  git branch signin
+    경로> git checkout 이동할 브렌치 이름 : git checkout signin
