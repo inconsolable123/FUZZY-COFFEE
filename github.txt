@@ -40,5 +40,12 @@ git은 컴퓨터 파일의 변경사항을 추적하고 팀 간에 해당 파일
     경로> git branch 만들어야할 브렌치 이름 :  git branch signin
     경로> git checkout 이동할 브렌치 이름 : git checkout signin
 
-    git 캐시 삭제
-    git credential-cache exit
+    - git 캐시 삭제
+      git credential-cache exit
+
+    - git  프로젝트 복사(vscode에서)
+      -git clone 리포지토라 주소
+
+    - git 터미널에서 오픈할때
+      경로> git code . : 새로운 vscode로 오픈
+      경로> git code .     
