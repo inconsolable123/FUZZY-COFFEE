@@ -32,4 +32,7 @@ git은 컴퓨터 파일의 변경사항을 추적하고 팀 간에 해당 파일
           - 파일을 회색으로 나타남  
           - 만약 파일이 새롭게 생성이된다면 : git comit -m 'main.js scroll 기능 변경'
     경로> git remote add origin 깃 저장소 주소 : origin이라는 별칭으로 원격 저장소를 연결
-    경로> git push origin 브랜차이를(master 또는 main) : origin이란 별칭의 원격 저장소로 버전 내용 전송               
+    경로> git push origin 브랜차이를(master 또는 main) : origin이란 별칭의 원격 저장소로 버전 내용 전송   
+
+    ※ git reset --hard HEAD : 지금 커밋상태로 완전히 되돌리고 변경사항은 버려라 뜻  
+    git push origin main --force : main 브랜치를 강제로 덮어쓰기          
